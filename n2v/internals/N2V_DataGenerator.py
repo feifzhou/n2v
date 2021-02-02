@@ -56,7 +56,7 @@ class N2V_DataGenerator():
                     move_axis_to += tuple([net_axes.index(b)])
         imgs = []
         for f in files:
-            if f.endswith('.tif') or f.endswith('.tiff'):
+            if f.lower().endswith('.tif') or f.lower().endswith('.tiff'):
                 imread = tifffile.imread
             elif f.endswith('.png'):
                 imread = image.imread

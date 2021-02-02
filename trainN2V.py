@@ -62,7 +62,7 @@ print('augment',(not args.noAugment))
 
 datagen = N2V_DataGenerator()
 imgs = datagen.load_imgs_from_directory(directory = args.dataPath, dims=args.dims, filter=args.fileName)
-print("imgs.shape",imgs[0].shape)
+print("imgs.shape",imgs[0].shape, 'all imgs', imgs.shape)
 
 # Here we extract patches for training and validation.
 pshape=( args.patchSizeXY, args.patchSizeXY)
